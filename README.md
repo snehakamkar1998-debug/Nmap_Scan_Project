@@ -1,8 +1,11 @@
-# Nmap_Scan_Project
-Ports 135 (msrpc), 139 (netbios-ssn), 445 (microsoft-ds): These ports are for various Windows file and printer sharing services. They have historically been targets for malware and exploits, such as the WannaCry ransomware which exploited a vulnerability in SMB on port 445. If these ports are open to the internet, it would be a major security risk. On a local network, they can still be exploited by an attacker who has already gained a foothold on your network.
-Port 3389 (ms-wbt-server): This is the port for Remote Desktop Protocol (RDP). If it's exposed to the internet, attackers can attempt to guess your password using brute-force attacks to gain full control of your computer. Even on a local network, if the password is weak, it could allow an attacker to move laterally across your network.
-Port 1900 (upnp): Universal Plug and Play (UPnP) is often considered a security risk because it allows devices to automatically open ports on your router without your explicit approval. This can expose other vulnerable services to the internet without you knowing.
-
-Ports 80 (http) and 443 (https): These ports are generally safe if the web server running on them is properly configured and kept up to date. However, an unpatched web server could be vulnerable to various attacks, such as cross-site scripting (XSS), SQL injection, or denial of service attacks.
-
-Port 5357 (wsdapi) and 2869 (icslap): While these are common on Windows systems and often have a lower risk profile, they are still associated with services that could potentially be exploited, especially if the operating system is not patched.
+# Nmap_Network_Scan_Project
+->Perfromed nmap scan from kali linux for understanding and exploring linux tools
+->Performed nmap -sS 192.168.1.0/24 to perform TCP SYN scan.
+-> Made a note of all open ports and services available and mentioned in the attached pdf.
+-> Made a list of common ports and understood the concepts.
+->Potential security risks from open ports.
+1. Ports 135 (msrpc), 139 (netbios-ssn), 445 (microsoft-ds): These ports are for various Windows file and printer sharing services. They have historically been targets for malware and exploits, such as the WannaCry ransomware which exploited a vulnerability in SMB on port 445. If these ports are open to the internet, it would be a major security risk. On a local network, they can still be exploited by an attacker who has already gained a foothold on your network.
+2. Port 3389 (ms-wbt-server): This is the port for Remote Desktop Protocol (RDP). If it's exposed to the internet, attackers can attempt to guess your password using brute-force attacks to gain full control of your computer. Even on a local network, if the password is weak, it could allow an attacker to move laterally across your network.
+3. Port 1900 (upnp): Universal Plug and Play (UPnP) is often considered a security risk because it allows devices to automatically open ports on your router without your explicit approval. This can expose other vulnerable services to the internet without you knowing.
+4. Ports 80 (http) and 443 (https): These ports are generally safe if the web server running on them is properly configured and kept up to date. However, an unpatched web server could be vulnerable to various attacks, such as cross-site scripting (XSS), SQL injection, or denial of service attacks.
+5. Port 5357 (wsdapi) and 2869 (icslap): While these are common on Windows systems and often have a lower risk profile, they are still associated with services that could potentially be exploited, especially if the operating system is not patched.
